@@ -20,6 +20,7 @@ export async function GET(request: NextRequest) {
   // This is where your scheduled task logic will go.
   const currentTime = new Date().toISOString();
   console.log(`[Vercel Cron Task] Executed at: ${currentTime} - This message is logged by the scheduled task.`);
+  console.log('Hello World');
 
   return NextResponse.json({ message: 'Cron job executed successfully.', timestamp: currentTime });
 }
