@@ -58,7 +58,7 @@ The `vercel.json` cron configuration only applies when deployed to Vercel. To te
     npm run dev
     ```
 2.  **Set the `GITHUB_ACTIONS_SECRET` (Optional for Local):**
-    *   You can create a `.env.local` file in the `minute-scheduler` directory and add `GITHUB_ACTIONS_SECRET="your_test_secret"`.
+    *   You can create a `.env.local` file at the root of the project and add `GITHUB_ACTIONS_SECRET="your_test_secret"`.
     *   If `GITHUB_ACTIONS_SECRET` is *not* set, the API route will bypass the authorization check during local development (`NODE_ENV === 'development'`) for convenience.
 3.  **Call the API endpoint:**
     Use a tool like `curl` or Postman to send a GET request to `http://localhost:3000/api/scheduler`.
